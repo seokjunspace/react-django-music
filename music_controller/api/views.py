@@ -7,5 +7,4 @@ from .models import Room
 
 class RoomView(generics.ListAPIView):
     queryset = Room.objects.all()
-    print("query", queryset)
     serializer_class = RoomSerializer
